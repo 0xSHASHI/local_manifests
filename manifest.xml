@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="lineage"
+           fetch="https://github.com"
+           revision="lineage-22.2" />
+
   <remote  name="mi-thorium"
            fetch="https://github.com/Mi-Thorium"
            revision="a15_qpr2/master" />
@@ -13,10 +17,65 @@
             fetch="https://github.com/Snow-Irony"
             revision="lineage-20.0" />
 
+  <remote name="me"
+            fetch="https://github.com/mizuenaAlt"
+            revision="lineage-20.0" />
+
+  <!-- remove -->
+  <remove-project name="android_hardware_interfaces" />
+  <remove-project name="android_hardware_lineage_interfaces" />
+  <remove-project name="android_hardware_qcom-caf_common" />
+  <remove-project name="android_hardware_qcom_wlan" />
+  <remove-project name="android_vendor_codeaurora_telephony" />
+  <remove-project name="android_vendor_qcom_opensource_audio-hal_st-hal" />
+  <remove-project name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" />
+  <remove-project name="android_vendor_qcom_opensource_display-commonsys-intf" />
+  <remove-project name="android_vendor_qcom_opensource_display-commonsys" />
+  <remove-project name="android_vendor_qcom_opensource_core-utils-sys" />
+  <remove-project name="android_vendor_qcom_opensource_core-utils-vendor" />
+  <remove-project name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
+  <remove-project name="android_vendor_qcom_opensource_dataservices" />
+  <remove-project name="android_vendor_qcom_opensource_display" />
+  <remove-project name="android_vendor_qcom_opensource_healthd-ext" />
+  <remove-project name="android_vendor_qcom_opensource_interfaces" />
+  <remove-project name="android_vendor_qcom_opensource_libfmjni" />
+  <remove-project name="android_vendor_qcom_opensource_power" />
+  <remove-project name="android_vendor_qcom_opensource_thermal-engine" />
+  <remove-project name="android_vendor_qcom_opensource_usb" />
+  <remove-project name="android_vendor_qcom_opensource_vibrator" />
+
+  <!-- me-patch -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk,sysui-studio" remote="me" revision="16.0"/>
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom,qcom_wlan,pdk-qcom" remote="me" revision="lineage-23.0"/>
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom" remote="me" revision="lineage-22.2">
+  <project path="kernel/configs" name="android_kernel_configs" groups="vts,pdk" remote="me" revision="16.0" />
+
+  <!-- Hardware - LineageOS -->
+  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" remote="lineage" revision="lineage-22.2"/>
+  <project path="hardware/qcom-caf/wlan" name="LineageOS/android_hardware_qcom_wlan" groups="qcom,pakala-wlan" remote="lineage" revision="lineage-22.2-caf" />
+  <project path="vendor/codeaurora/telephony" name="LineageOS/android_vendor_codeaurora_telephony" groups="qcom,qssi" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,pakala-audio" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar-legacy" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,lanai-audio" remote="lineage" revision="lineage-22.0-legacy" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/commonsys/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/core-utils-sys" name="LineageOS/android_vendor_qcom_opensource_core-utils-sys" groups="qcom,qssi" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/core-utils-vendor" name="LineageOS/android_vendor_qcom_opensource_core-utils-vendor" groups="qcom,pakala-vendor" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" remote="lineage" revision="lineage-22.2-legacy-um" />
+  <project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" groups="qcom,pakala-vendor" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/display" name="LineageOS/android_vendor_qcom_opensource_display" groups="qcom" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/healthd-ext" name="LineageOS/android_vendor_qcom_opensource_healthd-ext" groups="qcom,pakala-vendor" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/libfmjni" name="LineageOS/android_vendor_qcom_opensource_libfmjni" groups="qcom" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/power" name="LineageOS/android_vendor_qcom_opensource_power" groups="qcom,pakala-vendor" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/thermal-engine" name="LineageOS/android_vendor_qcom_opensource_thermal-engine" groups="qcom,pakala-vendor" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" groups="qcom,pakala-vendor" remote="lineage" revision="lineage-22.2"/>
+  <project path="vendor/qcom/opensource/vibrator" name="LineageOS/android_vendor_qcom_opensource_vibrator" groups="qcom,pakala-vendor" remote="lineage" revision="lineage-22.2"/>
+
   <!-- Common -->
-  <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common"     groups="device" remote="snow1" revision="a15_qpr2/master" />
+  <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common"     groups="device" remote="snow1" revision="crdroid-12.0" />
   <project path="vendor/xiaomi/mithorium-common" name="proprietary_vendor_xiaomi_mithorium-common" groups="device" remote="snow1" revision="a15_qpr2/master" />
-  <project path="vendor/xiaomi/mithorium-common-graphics" name="proprietary_vendor_xiaomi_mithorium-common-graphics" groups="device" remote="mi-thorium" revision="a15_qpr2/master"/>
+  <project path="vendor/xiaomi/mithorium-common-graphics" name="proprietary_vendor_xiaomi_mithorium-common-graphics" groups="device" remote="snow1" revision="a15_qpr2/master"/>
 
   <!-- Vince -->
   <project path="device/xiaomi/vince"        name="device_xiaomi_vince"        groups="device" remote="snow1" revision="lineage-22.2"/>
@@ -47,8 +106,8 @@
   </project>
 
  <!-- Hardware - display-commonsys-intf -->
-  <project path="hardware/mithorium/display/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom"/>
-  <project path="hardware/mithorium/display/lineage-21.0-caf-msm8953/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom"/>
+  <project path="hardware/mithorium/display/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" remote="lineage" revision="lineage-22.2"/>
+  <project path="hardware/mithorium/display/lineage-21.0-caf-msm8953/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" remote="lineage" revision="lineage-22.2"/>
 
  <!-- Hardware - LA.UM.8.6.2 -->
   <project path="hardware/mithorium/display/LA.UM.8.6.2.r1-09500-89xx.0/display" name="android_hardware_qcom_display_mithorium" groups="device" remote="mi-thorium" revision="mithorium/LA.UM.8.6.2.r1-09500-89xx.0"/>
@@ -59,7 +118,7 @@
   <project path="hardware/mithorium/display/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/hal" name="android_hardware_qcom_display_mithorium" groups="device" remote="mi-thorium" revision="mithorium/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0"/>
 
  <!-- Hardware - LineageOS (based on LA.UM.10.6.2 tags) -->
-  <project path="hardware/mithorium/media/lineage-21.0-caf-msm8953/hal" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-21.0-caf-msm8953" />
-  <project path="hardware/mithorium/display/lineage-21.0-caf-msm8953/hal" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-21.0-caf-msm8953" />
+  <project path="hardware/mithorium/media/lineage-21.0-caf-msm8953/hal" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" remote="lineage" revision="lineage-21.0-caf-msm8953" />
+  <project path="hardware/mithorium/display/lineage-21.0-caf-msm8953/hal" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="lineage" revision="lineage-21.0-caf-msm8953" />
 
 </manifest>
