@@ -25,6 +25,7 @@
   <remove-project name="android_hardware_interfaces" />
   <remove-project name="android_hardware_lineage_interfaces" />
   <remove-project name="android_hardware_qcom-caf_common" />
+  <remove-project name="android_kernel_configs" />
   <remove-project name="android_hardware_qcom_wlan" />
   <remove-project name="android_vendor_codeaurora_telephony" />
   <remove-project name="android_vendor_qcom_opensource_audio-hal_st-hal" />
