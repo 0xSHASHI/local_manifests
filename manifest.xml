@@ -21,7 +21,13 @@
   <!-- Vince -->
   <project path="device/xiaomi/vince"        name="device_xiaomi_vince"        groups="device" remote="snow1" revision="lineage-22.2"/>
   <project path="vendor/xiaomi/vince"        name="vendor_xiaomi_vince"    groups="device" remote="snow1" revision="lineage-22.2"/>
-  <project path="kernel/xiaomi/vince"        name="kernel_msm-4.9"    groups="device" remote="snow1" revision="mithorium/a15/master"/>
+
+  <!-- Ysl -->
+  <project path="device/xiaomi/ysl"        name="device_xiaomi_vince"        groups="device" remote="snow1" revision="lineage-22.2"/>
+  <project path="vendor/xiaomi/ysl"        name="vendor_xiaomi_vince"    groups="device" remote="snow1" revision="lineage-22.2"/>
+
+  <!-- kernel-4.9 -->
+  <project path="kernel/xiaomi/msm8953"        name="kernel_msm-4.9"    groups="device" remote="snow1" revision="mithorium/a15/master"/>
 
   <!-- MSM8953-CAMERA-COMMON -->
   <project path="device/xiaomi/vince/camera"        name="device_xiaomi-msm8953_camera"        groups="device" remote="snow" revision="k4.9" />
