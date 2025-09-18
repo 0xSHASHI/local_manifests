@@ -28,12 +28,13 @@
 
   <!-- kernel-4.9 -->
   <project path="kernel/xiaomi/msm8953"        name="kernel_msm-4.9"    groups="device" remote="snow1" revision="mithorium/a15/master"/>
+  <project path="kernel/xiaomi/msm8953/techpack/audio-legacy"        name="kernel_techpack_audio-legacy"    groups="device" remote="snow1" revision="vince-4.9"/>
+  <project path="kernel/xiaomi/msm8953/drivers/staging/prima"        name="vendor_qcom_opensource_wlan_prima"    groups="device" remote="mi-thorium" revision="wlan/LA.UM.9.6.4/mithorium/master"/>
 
   <!-- MSM8953-CAMERA-COMMON -->
   <project path="device/xiaomi/vince/camera"        name="device_xiaomi-msm8953_camera"        groups="device" remote="snow" revision="k4.9" />
 
-  <project path="kernel/xiaomi/vince/techpack/audio-legacy"        name="kernel_techpack_audio-legacy"    groups="device" remote="snow1" revision="vince-4.9"/>
-  <project path="kernel/xiaomi/vince/drivers/staging/prima"        name="vendor_qcom_opensource_wlan_prima"    groups="device" remote="mi-thorium" revision="wlan/LA.UM.9.6.4/mithorium/master"/>
+  <!-- extra -->
   <project path="vendor/lineage-priv" name="vendor_extra" remote="snow" revision="14" />
 
   <!-- Hardware -->
