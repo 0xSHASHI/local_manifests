@@ -26,7 +26,7 @@
 
   <!-- kernel-4.9-module -->
   <project path="kernel/xiaomi/msm8953/techpack/audio-legacy"        name="kernel_techpack_audio-legacy"    groups="device" remote="needAlt" revision="audio-4.9"/>
-  <project path="kernel/xiaomi/msm8953/techpack/xiaomi-titanium"        name="techpack_xiaomi-titanium"    groups="device" remote="needAlt" revision="wip"/>
+  <project path="kernel/xiaomi/msm8953/techpack/xiaomi-titanium"        name="techpack_xiaomi-titanium"    groups="device" remote="needAlt" revision="ts/test"/>
   <project path="kernel/xiaomi/msm8953/drivers/staging/prima"        name="vendor_qcom_opensource_wlan_prima"    groups="device" remote="mi-thorium" revision="wlan/LA.UM.9.6.4/mithorium/master"/>
 
   <!-- MSM8953-CAMERA-COMMON -->
