@@ -69,7 +69,7 @@
   <!--<project path="vendor/lineage" name="android_vendor_lineage" remote="LineageOS" /> -->
 
   <!-- Legacy AOSP additions -->
-  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" remote="LineageOS" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="hardware/knowles/athletico/sound_trigger_hal" name="android_hardware_knowles_athletico_sound_trigger_hal" groups="coral" remote="LineageOS" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="LineageOS" />
   <!--
