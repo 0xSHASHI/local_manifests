@@ -103,7 +103,7 @@
   <project path="external/json-c" name="android_external_json-c" groups="qcom,qssi" remote="LineageOS" />
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,pakala-vendor" revision="lineage-23.0-caf" remote="LineageOS" />
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom,legacy-qcom" revision="lineage-23.0-caf" remote="LineageOS" />
-  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom" >
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom" remote="LineageOS" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
