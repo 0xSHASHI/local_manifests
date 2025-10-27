@@ -4,11 +4,6 @@
   <remote name="LineageOS"
           fetch="https://github.com/LineageOS"
           revision="lineage-23.0" />
-  
-  <remote name="aosp"
-          fetch="https://android.googlesource.com"
-          review="android-review.googlesource.com"
-          revision="refs/tags/android-16.0.0_r1" />
 
   <!-- LineageOS additions -->
   <!--<project path="android" name="android" remote="LineageOS" /> -->
